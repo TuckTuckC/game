@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    height: 100px;
+}
+
 #menu {
     display: grid;
     border: 2px solid green;
@@ -54,6 +58,10 @@
     animation: log 3s infinite linear;
 }
 
+.rolling2 {
+    animation: log 2.5s infinite linear;
+}
+
 @keyframes log {
     0%{left: 918px;}
     100%{left: -129px;}
@@ -68,7 +76,6 @@
     border-radius: 40px;
     width: 700px;
     height: 500px;
-    visibility: hidden;
 }
 
 #end-screen * {
@@ -87,4 +94,36 @@
 
 #end-screen > h4 {
     margin: 200px 0 0 0;
+}
+
+#help-screen {
+    z-index: 1;
+    position: relative;
+    top: -1100px;
+    background-color: rgb(95, 188, 250);
+    border: 2px solid black;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+}
+
+#help-screen * {
+    display: flex;
+    justify-content: center;
+}
+
+#help-screen > h5 {
+    margin: 20px 0 0 0;
+}
+
+#help-screen > h4 {
+    margin: 20px 0 0 0;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
 }
