@@ -1,0 +1,90 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+#menu {
+    display: grid;
+    border: 2px solid green;
+    width: 1000px;
+    height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+
+#counter {
+    border: 2px solid yellow;
+    width: 1000px;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+
+.game {
+    border: 2px solid red;
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(157, 250, 95);
+    overflow: hidden;
+}
+
+#player {
+    position: relative;
+    width: 75px;
+    top: 425px;
+}
+
+.jumping {
+    animation: jump 800ms
+}
+
+@keyframes jump {
+    0%{top: 425px;}
+    50%{top: 320px;}
+    100%{top: 425px;}
+}
+
+#log {
+    position: relative;
+    width: 50px;
+    top: 440px;
+    left: 918px;
+}
+
+.rolling {
+    animation: log 3s infinite linear;
+}
+
+@keyframes log {
+    0%{left: 918px;}
+    100%{left: -129px;}
+}
+
+#end-screen {
+    z-index: 1;
+    position: relative;
+    top: -600px;
+    background-color: rgb(203, 250, 95);
+    border: 2px solid black;
+    border-radius: 40px;
+    width: 700px;
+    height: 500px;
+    visibility: hidden;
+}
+
+#end-screen * {
+    display: flex;
+    justify-content: center;
+}
+
+#end-screen > button {
+    margin: 30px 0 0 0;
+}
+
+#end-screen > p {
+    margin: 50px 0 0 0;
+    font-size: 20px;
+}
+
+#end-screen > h4 {
+    margin: 200px 0 0 0;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kangaroo Mahem</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script defer src="./js/script.js"></script>
+</head>
+<body>
+    <div id="menu" class="d-grid gap-2">
+        <button type="button" id="start" class="btn btn-primary btn-lg btn-block">Start</button>
+        <button type="button" id="help" class="btn btn-secondary btn-lg btn-block">Help</button>
+    </div>
+    <div id="counter">
+        <p id="lives">Lives: </p>
+        <p id="score">Score: </p>
+    </div>
+    <div class="game">
+        <img src="./images/Kangaroo.png" id="player">
+        <img src="./images/Log.png" id="log">
+    </div>
+    <div id="end-screen">
+        <h1>Your lives are depleated!</h1>
+        <p id="end-score">You got a score of (score)</p>
+        <h4>Press "Again" to start again.</h4>
+        <button type="button" id="start" class="btn btn-primary btn-lg btn-block">AGAIN</button>
+    </div>
+</body>
+</html>
