@@ -19,4 +19,4 @@ When the kangaroo got hit, it would lose around 60 lives. That was because I did
 ## Additional information:
 I wanted to make it to where when there was a collision, the animations for both tha kangaroo and the log froze for a split second so that the user would know that they got hit other than looking at the life counter. But I couldn't figure out a way to do it using the pause and play functions.
 ## App Demo 
-https://github.com/TuckTuckC/game
+https://tucktuckc.github.io/game/
