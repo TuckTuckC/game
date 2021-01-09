@@ -53,6 +53,7 @@ collition = setInterval(function() {
             shouldTakeHit = true;
         }, SHOULD_TAKE_HIT_TIMER);
     };
+    // Difficulty stages
     if (score > 840) {
         log.classList.remove("rolling");
         log.classList.add("rolling2");
