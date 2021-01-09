@@ -51,7 +51,7 @@ body {
     position: relative;
     width: 50px;
     top: 440px;
-    left: 918px;
+    left: 1250px;
 }
 
 .rolling {
@@ -62,8 +62,16 @@ body {
     animation: log 2.5s infinite linear;
 }
 
+.rolling3 {
+    animation: log 2s infinite linear;
+}
+
+.rolling4 {
+    animation: log 1.5s infinite linear;
+}
+
 @keyframes log {
-    0%{left: 918px;}
+    0%{left: 1250px;}
     100%{left: -129px;}
 }
 

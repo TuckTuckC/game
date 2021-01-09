@@ -51,10 +51,20 @@ collition = setInterval(function() {
             shouldTakeHit = true;
         }, SHOULD_TAKE_HIT_TIMER);
     };
-    if (score > 815) {
+    if (score > 40) {
         log.classList.remove("rolling");
         log.classList.add("rolling2");
     };
+    if (score > 1500) {
+        log.classList.remove("rolling2");
+        log.classList.add("rolling3");
+    };
+
+    if (score > 2115) {
+        log.classList.remove("rolling3");
+        log.classList.add("rolling4");
+    };
+
 }, GAME_TICK_SPEED);
 
 
