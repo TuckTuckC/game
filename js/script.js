@@ -4,6 +4,7 @@ log = document.getElementById("log");
 endScreen = document.getElementById("end-screen");
 helpScreen = document.getElementById("help-screen");
 $score = $("#score");
+startBtn = $('button#start')
 
 lives = 3;
 score = 0;
@@ -45,13 +46,14 @@ collition = setInterval(function() {
             score = 0;
             log.className = '';
             scoring = false;
+            document.getElementById("start").disabled = false;
         };
     } else if (!shouldTakeHit) {
         setTimeout(function() {
             shouldTakeHit = true;
         }, SHOULD_TAKE_HIT_TIMER);
     };
-    if (score > 40) {
+    if (score > 840) {
         log.classList.remove("rolling");
         log.classList.add("rolling2");
     };
@@ -60,7 +62,7 @@ collition = setInterval(function() {
         log.classList.add("rolling3");
     };
 
-    if (score > 2115) {
+    if (score > 2132) {
         log.classList.remove("rolling3");
         log.classList.add("rolling4");
     };
@@ -69,7 +71,7 @@ collition = setInterval(function() {
 
 
 // Start
-$('button#start').on('click', function() {
+startBtn.on('click', function() {
     endScreen.classList.remove("visible");
     endScreen.classList.add("hidden");
     helpScreen.classList.remove("visible");
@@ -80,6 +82,7 @@ $('button#start').on('click', function() {
     $('#lives').text(`Lives: ${lives}`);
     $('#score').text(`Score: ${score}`);
     scoring = true;
+    document.getElementById("start").disabled = true;
 });
 
 // Help
