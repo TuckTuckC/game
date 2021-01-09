@@ -13,7 +13,7 @@
     - JQuery
     - BootStrap
 ## Approach: 
-Explain your approach to develop the app/game
+The main thing that makse the game work is the 2d collision, everything in the game is based around that. so I have animations for both the kangaroo and the log, and if their positions overlap, there is a collision. If a collision is found, then the player loses a life. Also a few functions to start the game, and to give instructions. And the start and the end of the game controlls the animations of the log.
 ## Challenges: 
 When the kangaroo got hit, it would lose around 60 lives. That was because I didn't set a "cooldown" for "lives -= 1" therefore it was taking away a life every 5 milliseconds, which in the game tick speed. so I set a variable called "shouldTakeHit" as a boolean, which was saying that it is okay to take damage at this time, and then set a timeout that made "shouldTakeHit" false for a certain amount of time.
 ## Additional information:
